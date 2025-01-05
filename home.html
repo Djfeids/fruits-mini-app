@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruits Mini-App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fbeec1;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .header {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .balances {
+      margin: 20px;
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+    }
+    .balance-item {
+      text-align: center;
+      padding: 10px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+      width: 30%;
+    }
+    .balance-item h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+    .buttons {
+      margin: 20px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .button {
+      margin: 10px 0;
+      padding: 10px 20px;
+      background-color: #ff6b6b;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 18px;
+      text-align: center;
+    }
+    .button:hover {
+      background-color: #ff5252;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Fruits Mini-App 🍉</h1>
+    <p>Earn FRU and SOL by completing missions and playing games!</p>
+  </div>
+  <div class="balances">
+    <div class="balance-item">
+      <h3>SOL Balance</h3>
+      <p id="sol-balance">0.00</p>
+    </div>
+    <div class="balance-item">
+      <h3>FRU Balance</h3>
+      <p id="fru-balance">0</p>
+    </div>
+    <div class="balance-item">
+      <h3>⚡ Energy</h3>
+      <p id="energy-balance">10</p>
+    </div>
+  </div>
+  <div class="buttons">
+    <button class="button" onclick="playGame()">🎮 Play</button>
+    <button class="button" onclick="dailyBonus()">🎁 Daily Bonus</button>
+    <button class="button" onclick="inviteFriends()">📨 Invite Friends</button>
+  </div>
+  <script>
+    function playGame() {
+      alert("Launching the game...");
+      // Redirect to the game or load it dynamically.
+    }
+    function dailyBonus() {
+      alert("Daily bonus claimed!");
+      // Logic for claiming the bonus.
+    }
+    function inviteFriends() {
+      alert("Invite link copied to clipboard!");
+      // Generate and copy the invite link.
+    }
+  </script>
+</body>
+</html>
